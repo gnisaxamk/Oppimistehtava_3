@@ -1,8 +1,14 @@
 -- CreateTable
-CREATE TABLE "Ostos" (
+CREATE TABLE "Henkilo" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "tuote" TEXT NOT NULL,
-    "poimittu" BOOLEAN NOT NULL DEFAULT false
+    "etunimi" TEXT NOT NULL,
+    "sukunimi" TEXT NOT NULL,
+    "titteli" TEXT NOT NULL,
+    "puhelin" TEXT NOT NULL,
+    "aloittanutPvm" TEXT NOT NULL,
+    "aloittanutAikaleima" TEXT NOT NULL,
+    "sahkoposti" TEXT NOT NULL,
+    "kuva" TEXT NOT NULL
 );
 
 -- CreateTable

@@ -1,18 +1,26 @@
+// Prisma Client generoidaan kansioon generated/prisma
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
 }
-
+// SQLite-kanta, osoite prisma.config.ts
 datasource db {
   provider = "sqlite"
 }
-
-model Ostos {
-  id       Int     @id @default(autoincrement())
-  tuote    String
-  poimittu Boolean @default(false)
+// Henkilöstöhakemiston henkilö
+model Henkilo {
+  id                  Int    @id @default(autoincrement())
+  etunimi             String
+  sukunimi            String
+  titteli             String
+  puhelin             String
+  aloittanutPvm       String
+  aloittanutAikaleima String // millisekunteja 1.1.1970
+  sahkoposti          String
+  kuva                String // tiedostonimi kansiossa
 }
 
+// Kirjautuva käyttäjä demo08
 model Kayttaja {
   id             Int    @id @default(autoincrement())
   kayttajatunnus String @unique
