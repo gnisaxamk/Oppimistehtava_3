@@ -1,0 +1,13 @@
+# Riippuvuudet ja generoidut tiedostot
+node_modules/
+server/generated/
+dist/
+
+# Ympäristömuuttujat (salaisuudet)
+.env
+
+# SQLite-kanta: rakennetaan migraatioista + seedistä (ks. README)
+server/dev.db
+
+# macOS
+.DS_Store
