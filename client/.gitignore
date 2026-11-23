@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+node_modules/
+server/generated/
+.env
+.DS_Store
+dist/
+server/dev.db
